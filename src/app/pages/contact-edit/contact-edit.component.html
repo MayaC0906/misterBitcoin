@@ -2,13 +2,13 @@
     <section class="flex column contact-edit">
         <section class="contact-actions">
             <a routerLink="/contact">
-                <img src="../../../assets/images/back.png" alt="go back">
+                <img src="assets/images/back.png" alt="go back">
             </a>
             <button *ngIf="contact._id" (click)="onDeleteContact(contact._id)">
-                <img src="../../../assets/images/delete.png" alt="delete image">
+                <img src="assets/images/delete.png" alt="delete image">
             </button>
         </section>
-        <img class="contact-image" src="../../../assets/images/contact.png" alt="contact image">
+        <img class="contact-image" src="assets/images/contact.png" alt="contact image">
         <form [formGroup]="form" (ngSubmit)="onSaveContact()" class="flex column">
             <h2>{{contact._id ? 'Edit contact' : 'Add contact'}}</h2>
             <div class="flex column">
