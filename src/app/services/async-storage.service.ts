@@ -4,6 +4,7 @@ export const storageService = {
     put,
     remove,
     query,
+    queryOne
 }
 
 interface EntityId {
@@ -11,6 +12,11 @@ interface EntityId {
 }
 
 function query<T>(entityType: string, delay = 200): Promise<T[]> {
+    var entities = JSON.parse(localStorage.getItem(entityType) as string) || []
+    return new Promise(resolve => setTimeout(() => resolve(entities), delay))
+}
+
+function queryOne<T>(entityType: string, delay = 200): Promise<T> {
     var entities = JSON.parse(localStorage.getItem(entityType) as string) || []
     return new Promise(resolve => setTimeout(() => resolve(entities), delay))
 }

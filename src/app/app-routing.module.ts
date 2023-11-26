@@ -6,6 +6,8 @@ import { ContactDetailsComponent } from './pages/contact-details/contact-details
 import { contactResolver } from './resolvers/contact.resolver';
 import { ChartsComponent } from './pages/charts/charts.component';
 import { ContactEditComponent } from './pages/contact-edit/contact-edit.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -31,8 +33,13 @@ const routes: Routes = [
     component: ChartsComponent,
   },
   {
+    path: 'signup',
+    component: SignupComponent,
+  },
+  {
+    canActivate: [authGuard],
     path: '',
-    component: HomePageComponent
+    component: HomePageComponent,
   }
 ];
 

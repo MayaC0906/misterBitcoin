@@ -37,12 +37,7 @@ export class ContactEditComponent implements OnInit, OnDestroy {
       )
       .subscribe(contact => {
         this.contact = contact
-        this.form = this.fb.group({
-          name: this.contact.name,
-          phone: this.contact.phone,
-          email: this.contact.email,
-          _id: this.contact._id
-        })
+        this.form.patchValue(contact)
       }
       )
   }
@@ -57,7 +52,8 @@ export class ContactEditComponent implements OnInit, OnDestroy {
   }
 
   onSaveContact() {
-    this.contactService.saveContact(this.form.value as Contact)
+    const contactToSave = {...this.contact, ...this.form.value}
+    this.contactService.saveContact(contactToSave as Contact)
       .pipe(takeUntil(this.destroySubject$),)
       .subscribe({
         next: this.onBack,

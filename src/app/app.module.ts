@@ -15,6 +15,7 @@ import { ChartsComponent } from './pages/charts/charts.component';
 import { ContactFilterComponent } from './cmps/contact/contact-filter/contact-filter.component';
 import { ContactEditComponent } from './pages/contact-edit/contact-edit.component';
 import { NgChartsModule } from 'ng2-charts';
+import { SignupComponent } from './pages/signup/signup.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { NgChartsModule } from 'ng2-charts';
     ChartsComponent,
     ContactFilterComponent,
     ContactEditComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,42 @@
+@import "../../../assets/scss/setup/variables";
+@import "../../../assets/scss/setup/functions";
+
+.signup {
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    font-family: monospace;
+    color: $clr8;
+    gap: 20px;
+
+     img {
+        width: 100px;
+    }
+
+    input {
+        height: 40px;
+        color: $clr8;
+        border-radius: 8px;
+        font-size: rem(16px);
+        padding: 10px;
+    }
+    button{
+        height: 45px;
+        width: 150px;
+        border-radius: 8px;
+        background-color: $clr5;
+        font-size: rem(20px);
+        font-weight: 700;
+        &:hover {
+            background-color: $clr9;
+            color: white;
+        }
+    }
+}
