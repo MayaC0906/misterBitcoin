@@ -11,24 +11,29 @@ import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
+    canActivate: [authGuard],
     path: 'contact/:id',
     component: ContactDetailsComponent,
     resolve: { contact: contactResolver }
   },
   {
+    canActivate: [authGuard],
     path: 'contact',
     component: ContactIndexComponent
   },
   {
+    canActivate: [authGuard],
     path: 'edit/:id',
     component: ContactEditComponent,
     resolve: { contact: contactResolver }
   },
   {
+    canActivate: [authGuard],
     path: 'edit',
     component: ContactEditComponent
   },
   {
+    canActivate: [authGuard],
     path: 'chart',
     component: ChartsComponent,
   },

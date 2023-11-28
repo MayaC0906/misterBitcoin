@@ -20,6 +20,7 @@
             <input [(ngModel)]="amount" type="number">
             <button (click)="onCoinTransfer()">Transfer</button>
         </section>
+        <p *ngIf="!isAbleToTransfer"> Can't transfer more than your coins!</p>
     </section>
 
     <hr>

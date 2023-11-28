@@ -34,7 +34,3 @@ export class BitCoinService {
       );
   }
 }
-
-
-
-// https://api.blockchain.info/charts/market-price?timespan=5months&format=json&cors=true
