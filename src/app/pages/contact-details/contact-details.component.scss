@@ -3,7 +3,7 @@
 .contact-details {
     margin: auto;
     min-width: 350px;
-    width: max-content;
+    max-width: 370px;
     height: max-content;
     padding: 25px;
     border-radius: 8px;
@@ -12,6 +12,10 @@
     flex-direction: column;
     gap: 15px;
     font-family: monospace;
+
+    h2 {
+        font-size: 16px;
+    }
 
     .contact-actions {
         height: 40px;
@@ -94,12 +98,13 @@
             }
         }
 
-        p{
+        p {
             color: red;
             margin-block-start: 8px;
         }
 
     }
+
     .moves {
         h2 {
             color: $clr8;
