@@ -1,0 +1,15 @@
+@import '../../../assets/scss/setup/variables';
+
+:host {
+    h2{
+        color: $clr9;
+        font-size: 20px;
+    }
+}
+
+.moves-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+

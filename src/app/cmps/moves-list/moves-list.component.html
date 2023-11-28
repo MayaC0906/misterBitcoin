@@ -1,0 +1,4 @@
+<h2 *ngIf="!moves?.length">No moves to show</h2>
+<section class="moves-list">
+    <move-preview  *ngFor="let move of moves" [move]="move" [title]="title"></move-preview>
+</section>

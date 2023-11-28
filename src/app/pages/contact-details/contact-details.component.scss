@@ -34,6 +34,7 @@
                 }
             }
         }
+
     }
 
     hr {
@@ -46,5 +47,61 @@
 
     img {
         width: 150px;
+    }
+
+    .coins-transfer {
+        h3 {
+            color: $clr9;
+            font-size: 20px;
+            font-weight: 700;
+            margin-block-end: 15px;
+        }
+
+        .transfer-info {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+
+            label {
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            input {
+                padding: 5px;
+                font-size: 16px;
+                height: 40px;
+                width: 150px;
+                border: 1px solid $clr8;
+                color: $clr8;
+                border-radius: 3px;
+            }
+
+            button {
+                font-size: 18px;
+                background-color: $clr10;
+                border-radius: 3px;
+                width: 100px;
+                height: 40px;
+                border: 1px solid $clr8;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: $clr11;
+                    color: white;
+                }
+            }
+        }
+
+    }
+    .moves {
+        h2 {
+            color: $clr8;
+            font-size: 25px;
+            font-weight: 700;
+            margin-block-end: 15px;
+            text-decoration: underline;
+        }
     }
 }

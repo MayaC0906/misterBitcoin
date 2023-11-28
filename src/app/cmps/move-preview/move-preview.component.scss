@@ -1,0 +1,18 @@
+@import '../../../assets/scss/setup/variables';
+@import '../../../assets/scss/setup/functions';
+
+.move-preview {
+display: flex;
+flex-direction: column;
+gap: 5px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+h2 {
+    font-size: rem(20px);
+    color: $clr7;
+    font-weight:500;
+
+    span{
+        font-weight: 700;
+    }
+}
+}

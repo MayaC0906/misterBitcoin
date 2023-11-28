@@ -16,18 +16,18 @@ export class ContactEditComponent implements OnInit, OnDestroy {
   constructor(private fb: FormBuilder) { }
 
   contactService = inject(ContactService)
-  contact = this.contactService.getEmptyContact()
   private router = inject(Router)
   private route = inject(ActivatedRoute)
-
+  contact = this.contactService.getEmptyContact()
+  //need to get an empty contact to have something to save in
 
   destroySubject$ = new Subject<void>()
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      name: [this.contact.name, [Validators.required]],
-      phone: [this.contact.phone, [Validators.required]],
-      email: [this.contact.email, [Validators.required]]
+      name: ['', [Validators.required]],
+      phone: ['', [Validators.required]],
+      email: ['', [Validators.required]]
     })
 
     this.route.data

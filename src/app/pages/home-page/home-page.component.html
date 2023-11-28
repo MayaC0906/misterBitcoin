@@ -8,4 +8,11 @@
     <img src="assets/images/bitcoin.png" alt="coin-image">
     <h2> <span>BTC:</span>  {{BitCoinRate}}</h2>
 </section>
+
+<hr>
+
+<section class="moves">
+    <h2>Your last 3 moves</h2>
+    <moves-list [moves]="movesList$ | async" [title]="true"></moves-list>
+</section>
 </section>

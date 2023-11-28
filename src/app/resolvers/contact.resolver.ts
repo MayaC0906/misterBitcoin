@@ -6,4 +6,4 @@ import { ContactService } from '../services/contact.service';
 export const contactResolver: ResolveFn<Contact> = (route, state) => {
   const id = route.params['id']
   return inject(ContactService).getById(id)
-};
+}

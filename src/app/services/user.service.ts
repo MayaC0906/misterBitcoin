@@ -12,10 +12,11 @@ const ENTITY = 'user'
 })
 
 export class UserService {
+
   user = {
-    _id: '1Ljbd5trdLMB',
+    _id: '',
     name: "",
-    coins: 100,
+    coins: 0,
     moves: [] as Move[]
   }
 
@@ -24,15 +25,17 @@ export class UserService {
   public loggedInUser$ = this._loggedInUser$.asObservable()
 
   query() {
-    let user = _getFromLocalStorage()
-    this._loggedInUser$.next(user)
+    let connectedUser = _getFromLocalStorage()
+    this._loggedInUser$.next(connectedUser)
   }
 
-  getLoggedInUser() {
+  getLoggedInUser() :User {
     return this._loggedInUser$.value
   }
-
+  
   signup(name: string) {
+    console.log(name);
+    
     const newUser =
     {
       _id: _makeId(),
@@ -53,15 +56,16 @@ export class UserService {
       amount: amount
     }
 
-    const moves: Move[] = [...this.user.moves, move]
+    const moves: Move[] = [move, ...this._loggedInUser$.value.moves]
 
     const newUser: User = {
-      ...this.user,
-      moves: moves
+      ...this._loggedInUser$.value,
+      moves: moves,
+      coins: this._loggedInUser$.value.coins - amount
     }
 
-    this._loggedInUser$.next(newUser)
     _saveToLocalStorage(newUser)
+    this._loggedInUser$.next(newUser)
   }
 }
 

@@ -16,6 +16,9 @@ import { ContactFilterComponent } from './cmps/contact/contact-filter/contact-fi
 import { ContactEditComponent } from './pages/contact-edit/contact-edit.component';
 import { NgChartsModule } from 'ng2-charts';
 import { SignupComponent } from './pages/signup/signup.component';
+import { LineChartComponent } from './cmps/line-chart/line-chart.component';
+import { MovesListComponent } from './cmps/moves-list/moves-list.component';
+import { MovePreviewComponent } from './cmps/move-preview/move-preview.component';
 
 
 @NgModule({
@@ -31,6 +34,9 @@ import { SignupComponent } from './pages/signup/signup.component';
     ContactFilterComponent,
     ContactEditComponent,
     SignupComponent,
+    LineChartComponent,
+    MovesListComponent,
+    MovePreviewComponent,
   ],
   imports: [
     BrowserModule,

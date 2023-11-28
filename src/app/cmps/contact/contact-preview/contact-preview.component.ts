@@ -7,9 +7,4 @@ import { Contact } from '../../../models/contact.model';
 })
 export class ContactPreviewComponent {
   @Input() contact!: Contact
-
-  onAddContact() {
-    console.log('addContact');
-    
-  }
 }

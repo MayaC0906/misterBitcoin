@@ -5,9 +5,26 @@
     </section>
 
     <hr>
-    
+
     <img src="assets/images/contact.png" alt="contact-img">
     <h2>Name: {{contact$.name}}</h2>
     <h2>Phone: {{contact$.phone}}</h2>
     <h2>Email: {{contact$.email}}</h2>
+
+    <hr>
+
+    <section class="coins-transfer">
+        <h3>Transfer coins to {{contact$.name}}</h3>
+        <section class="transfer-info">
+            <label for="amount">Amount</label>
+            <input [(ngModel)]="amount" type="number">
+            <button (click)="onCoinTransfer()">Transfer</button>
+        </section>
+    </section>
+
+    <hr>
+<section class="moves">
+    <h2>Your moves</h2>
+    <moves-list [moves]="movesList$ | async" [title]="false"></moves-list>
+</section>
 </section>

@@ -1,0 +1,6 @@
+
+<section class="move-preview">
+    <h2 *ngIf="title"> <span>To:</span> {{move?.to}}</h2>
+    <h2><span>At:</span> {{move?.at | date: 'dd/MM/yyyy hh:mm a'}}</h2>
+    <h2><span>Amount:</span> {{move?.amount}} coins</h2>
+</section>

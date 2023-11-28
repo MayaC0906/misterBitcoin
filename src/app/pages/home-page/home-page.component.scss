@@ -32,4 +32,20 @@
             margin-inline-end: 20px;
         }
     }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: $clr6;
+        margin: 20px 0;
+
+    }
+    .moves {
+        h2 {
+            color: $clr8;
+            font-size: rem(25px);
+            font-weight: 700;
+            margin-block-end: 15px;
+            text-decoration: underline;
+        }
+    }
 }

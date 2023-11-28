@@ -5,10 +5,9 @@ import { map, take, tap } from 'rxjs';
 
 export const authGuard: CanActivateFn = (route, state) => {
   const router = inject(Router)
-
-  return inject(UserService).loggedInUser$.pipe(
-    tap(user=> console.log(user)
-    ),
-    map(user => !!user.name || router.createUrlTree(['/signup']))
-  )
-};
+  inject(UserService).getLoggedInUser()
+  return inject(UserService).loggedInUser$
+    .pipe(
+      map(user => !!user?._id || router.createUrlTree(['/signup']))
+    )
+}

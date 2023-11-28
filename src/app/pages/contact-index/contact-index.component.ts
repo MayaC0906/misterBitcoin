@@ -10,10 +10,5 @@ import { ContactService } from '../../services/contact.service';
 })
 export class ContactIndexComponent {
   contactService = inject(ContactService)
-  contacts$!: Observable<Contact[]>
-
-
-  ngOnInit(): void {
-      this.contacts$ = this.contactService.contacts$      
-  }
+  contacts$ = this.contactService.contacts$
 }
