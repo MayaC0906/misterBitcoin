@@ -1,27 +1,27 @@
-# MisterBitCoin
+# Mister Bitcoin Mini App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+Welcome to Mister Bitcoin Mini App! This small project serves as a playground to experience the Angular framework. It includes frontend components, SCSS styling, and API calls.
 
-## Development server
+## Features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Frontend Components:** Explore various Angular components utilized in this app, showcasing different aspects of building user interfaces with Angular.
+- **SCSS Styling:** Witness the power of SCSS for styling the app, making it visually appealing and customizable.
+- **API Calls:** Interact with the Mister Bitcoin API to fetch real-time cryptocurrency data, providing insights into the dynamic world of digital currencies.
 
-## Code scaffolding
+## Usage:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run the app locally:
 
-## Build
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server with `ng serve`.
+5. Open your browser and visit `http://localhost:4200`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Credits:
 
-## Running unit tests
+- Built with Angular framework.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contributors:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Maya Cohen
