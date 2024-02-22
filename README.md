@@ -6,7 +6,7 @@ Welcome to Mister Bitcoin Mini App! This small project serves as a playground to
 
 - **Frontend Components:** Explore various Angular components utilized in this app, showcasing different aspects of building user interfaces with Angular.
 - **SCSS Styling:** Witness the power of SCSS for styling the app, making it visually appealing and customizable.
-- **API Calls:** Interact with the Mister Bitcoin API to fetch real-time cryptocurrency data, providing insights into the dynamic world of digital currencies.
+- **API Calls:** Utilize API calls within the app to showcase the ability to interact with external services.
 
 ## Usage:
 
